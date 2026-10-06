@@ -1,0 +1,14 @@
+ARTICOLO 2
+17 novembre
+
+Il programma per la mattinata, indicativamente dalle 09:00 alle 10:00 consisteva nella lettura di "La scuola di Dusseldorf: fotografia contemporanea tedesca" di Stefan Gronert, a cura di Lothar Schirmer. È un testo che ho individuato come una delle possibili tracce su cui, e da cui, sviluppare il percorso didattico per Fotografia Digitale, l'insegnamento pre cui ho temporaneamente la cattedra all'Università di Udine. E che se riconfermato, terrò presumibilmente a partire dalla fine di settembre prossimo.
+
+Mentre attendevo che 'uscisse il sole', ho lavorato su "The Photographers Playbook", di Aperture, per farmi un'idea sul tipo di esercizi che gli autori proponevano, così da progettarne una decina senza 'copiare' dal testo. Indicativamente, il mio corso si struttura in otto, dieci lezioni, che io chiamo "episodi". In ciascun episodio invito la classe a lavorare su un tema, su un aspetto tecnico (luce, tempo, spazio, ecc) e narrativo (temi, tipologie, "generi", "categorie", ecc. che rispondono alla domanda "che cos'è?"). Siccome la mia ricerca ha molto a che fare con "training", cioè l'allenamento, mi pareva interessante, proporre degli esercizi sulla scorta di quanto realizzato da Aperture curando The Photographers Playbook".
+
+A colpirmi è stato principalmente l'elenco degli autori degli esercizi: 307 a quanto ne leggo sulla pubblicazione, XXXXX 314 quanti ne ho trascritti io XXXXX. Le fotografo per estrarre rapidamente i nomi e creare un elenco, ma il riconoscimento del testo funziona malamente e la maggior parte dei nomi risultano sbagliati.
+Chiedo a GpT, ma non riesce a reperire l'elenco completo. Trovo una versione digitale del testo che non dà risultati. La versione OCR sembra non essere fedele.
+
+Riprendo le fotografie che avevo scattato e da Preview copio le colonne di nomi, partendo dalla fine dell'elenco. Correggo i nomi. Ripeto l'operazione per una ventina di volte. Non sembra volerci molto. Continuo. In 30' ho sistemato l'elenco, che conta 314 nomi. Ieri ho trascorso il pomeriggio a correggere il codice HTML e CSS del mio sito, cercando di risolvere un problema di visualizzazione via mobile. Vi erano in realtà, sei errori, cinque dei quali segnalati dallo snippet di Dreamweaver, e uno "invisibile", che modificava il font con cui avevo impostato il "logo", CRUDO, cioè l'architettura del leggendario Sand Bureau.
+
+In fondo, l'operazione era la stessa.
+Alle 09:40 sto scrivendo "09:40", e non ho ancora attaccato a leggere il monumentale "La scuola di Dusseldorf". Lascio a dopo, che probabilmente si situa tra le 13:00 e le 14:00 di oggi. Ora routine domestica: rifare il letto, arieggiare le stanze, resettare la cucina.

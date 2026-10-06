@@ -1,0 +1,494 @@
+	/* --------------------------------------------------------
+   BASE FONT & RESET
+-------------------------------------------------------- */
+html {
+  font-size: clamp(28px, 2vw + 1rem, 36px);
+	}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------------------------------
+   IMPORTAZIONE FONT
+-------------------------------------------------------- */
+@font-face {
+  font-family: 'Sand Bureau';
+  src: url('fonts/sandbureau.woff2') format('woff2'),
+       url('fonts/sandbureau.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("fonts/Geist-Regular.woff2") format("woff2"),
+       url("fonts/Geist-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Geist", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  background: #fff;
+  padding: 0.5rem;
+  line-height: 0.5;
+  letter-spacing: -0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------------------------------------------------------
+   LOGO
+-------------------------------------------------------- */
+.logo {
+  position: fixed;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  font-family: 'Sand Bureau', serif;
+  font-size: 0.9rem;
+  mix-blend-mode: difference;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: crosshair;
+  padding-right: 0.15rem;
+}
+
+/* --------------------------------------------------------
+   MENU
+-------------------------------------------------------- */
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.menu-item a {
+  font-size: 0.8rem;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  text-decoration: underline;
+  color: #000;
+  font-weight: 400;
+}
+
+.menu-item a:hover {
+  color: #00FF00;
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------
+   LISTA LAVORI
+-------------------------------------------------------- */
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.work-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  line-height: 0.7;
+  letter-spacing: -0.05em;
+}
+
+.work-item a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.work-item a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+.work-item a:visited,
+.contact-item a:visited,
+.col p a:visited {
+  color: #ff80bf;
+}
+
+.nuova-classe a:visited {
+  color: #ff80bf;
+}
+
+/* --------------------------------------------------------
+   CITAZIONI
+-------------------------------------------------------- */
+.citation {
+  font-family: "Geist", Helvetica, Arial, sans-serif;
+  font-size: 0.4rem;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #333;
+  margin: 0.1rem 0;
+}
+
+/* --------------------------------------------------------
+   CONTATTI
+-------------------------------------------------------- */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.contact-item {
+  font-size: 0.8rem;
+  line-height: 0.7;
+  letter-spacing: -0.05em;
+}
+
+.contact-item a {
+  font-size: 0.8rem;
+  line-height: 0.7;
+  letter-spacing: -0.05em;
+  text-decoration: underline;
+  color: inherit;
+}
+
+.contact-item a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+/* --------------------------------------------------------
+   TOP ROW
+-------------------------------------------------------- */
+.top-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 0.5rem;
+  line-height: 0.7;
+}
+
+.now-label,
+.datetime,
+.subheading,
+.subdate-text,
+.subphrase, 
+.subphrase_week,
+.subphrase_week_no_text {
+  font-size: 0.8rem;
+  letter-spacing: -0.05em;
+  line-height: 0.7;
+  margin-top: 0em;
+}
+
+.datetime {
+  border-top: 0;
+  margin-top: 0em;
+}
+
+.now-label {
+  color: #666;
+  text-transform: uppercase;
+}
+
+.subheading {
+  color: #666;
+  margin-bottom: 0.1rem;
+}
+
+.subdate-text {
+  color: #00FF00;
+  margin-bottom: 0.2rem;
+}
+
+.subphrase {
+  color: #0000FF;
+  margin-bottom: 0.1rem;
+	margin-top: -0.1em;
+}
+
+.subphrase_week {
+	color: #f900dd;
+  margin-bottom: 0.2rem;
+	margin-top: -0.1em;	
+}
+
+.subphrase_week_no_text {
+	color: #f900dd;
+  margin-bottom: 0.5rem;
+	margin-top: -0.1em;	
+}
+
+/* --------------------------------------------------------
+   LAYOUT: THREE COLUMNS (DESKTOP)
+-------------------------------------------------------- */
+.three-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+}
+
+.col p {
+  font-size: 0.8rem;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  margin-bottom: 0.5rem;
+}
+
+/* --------------------------------------------------------
+   RIENTRO
+-------------------------------------------------------- */
+.col p.indent {
+  text-indent: 2em;
+line-height: 0.9;
+}
+
+/* --------------------------------------------------------
+	CITAZIONE / <p class="quote"></p>
+------------------------------------------------------- */
+
+.col p.quote {
+  padding-left: 1em;
+}
+
+.col img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* SOLO DESKTOP: i paragrafi occupano 2 colonne */
+@media (min-width: 601px) {
+  
+  /* Colonna 1: occupa le prime 2 colonne */
+  #col-1 {
+    grid-column: 1 / 3;
+  }
+
+  /* Colonna 2: occupa le prime 2 colonne, sotto col-1 */
+  #col-2 {
+    grid-column: 1 / 3;
+  }
+
+  /* Colonna 3 (citazioni): occupa la terza colonna, inizia dalla prima riga */
+  #col-3 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    align-self: start;
+  }
+}
+
+::selection {
+    color: #FF00FF;        /* MAGENTA */
+    background-color: transparent; /* NO SFONDO  */
+}
+
+/* Per Firefox serve anche questo prefisso */
+::-moz-selection {
+    color: #FF00FF;
+    background-color: transparent;
+}
+
+
+/* --------------------------------------------------------
+   IMMAGINI
+-------------------------------------------------------- */
+.three-columns img {
+  width: 100%;
+  height: auto;
+  display: block;
+  grid-column: 1 / span 2;
+}
+
+.wide-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  grid-column: 1 / span 2;
+  margin-bottom: 1.2rem;
+	margin-top: -1.2rem;
+}
+
+.wide-img-2 {
+  width: auto;
+ max-width: none; height: auto;
+  display: block;
+  grid-column: 1 / span 2;
+  margin-bottom: 1.2rem;
+	margin-top: -1.2rem;
+}
+
+/* --------------------------------------------------------
+   IMMAGINE A DIMENSIONE NATIVA (override del layout)
+-------------------------------------------------------- */
+.three-columns img.img-native,
+.col img.img-native {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+	margin-bottom: 1.2rem;
+	margin-top: -1.2rem;
+}
+
+/* --------------------------------------------------------
+   VIDEO E AUDIO EMBED
+-------------------------------------------------------- */
+
+/* Wrapper per video responsive (mantiene ratio 16:9) */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 1.2rem;
+  margin-top: -1.2rem;
+  grid-column: 1 / span 2;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Audio player */
+audio {
+  width: 100% !important;
+  height: 54px !important;
+  display: block !important;
+  margin-top: -0.4em !important;
+  background: none;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: relative !important;
+  z-index: 9999 !important;
+}
+
+/* Mobile <= 600px */
+@media (max-width: 600px) {
+  .video-container,
+  .three-columns audio,
+  .col audio {
+    grid-column: 1;
+	  margin-top: 0em;
+  }
+}
+
+
+
+/* --------------------------------------------------------
+   CHECKBOX
+-------------------------------------------------------- */
+.checkbox-list {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin-top: 0.05em;
+}
+
+.checkbox-list li {
+  margin-bottom: 0.1em;
+}
+
+.checkbox-list input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox-list input[type="checkbox"]:checked {
+  background-color: #333;
+  border-color: #333;
+}
+
+.checkbox-list input[type="checkbox"]:checked::after {
+  content: '✔';
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 3px;
+}
+
+/* Label allineati con il checkbox */
+.checkbox-list label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-display: "Geist";
+  font-size: 0.8em;
+  letter-spacing: -0.05em;
+  line-height: 0.7;
+  color: rgba(0,0,0,0.85)
+}
+
+/* --------------------------------------------------------
+   MEDIA QUERIES
+-------------------------------------------------------- */
+
+/* Tablet <= 900px */
+@media (max-width: 900px) {
+  .three-columns img,
+  .wide-img {
+    grid-column: 1 / span 2;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile <= 600px */
+@media (max-width: 600px) {
+
+  .three-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .three-columns p {
+    width: 80%;
+  }
+
+  .three-columns img,
+  .wide-img {
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .notes-list li {
+    gap: 0.5rem;
+    margin-bottom: 0.35rem;
+  }
+
+  /* Aumento interlinea per l'orologio */
+  .datetime {
+	  display: none;
+    line-height: 0.9;
+    margin-top: 0em;
+    padding-top: 0em;
+  }
+}

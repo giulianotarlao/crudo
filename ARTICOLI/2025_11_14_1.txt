@@ -1,0 +1,15 @@
+Avevo in mente di scrivere un diario, ripartendo dalle esperienze di <em>"Me Myself AI “</em>, un progetto audio del 2018, strutturato come un podcast, in cui parlavo all'<em>assistente vocale </em>del mio smartphone, dettandogli dei ragionamenti sulle modalità di lavoro che gli artisti, di genere ed epoca diversa, adoperavano nella loro ricerca. Pensavo di usare quel materiale, che veniva salvato all’interno di “Note” di iPhone, per far generare al software una versione audio delle registrazioni. Nulla di che, dunque. 
+<br>
+<br>
+Era un'operazione piuttosto veloce. Il software eseguiva il comando in modo immediato, senza anteprima / senza conferma, né con possibilità di intervento da parte mia in real time sull'intonazione, la pronuncia, la velocità di esecuzione. 
+L'output  era interessante: i periodi lunghi, le parole di lingue diverse, l'uso della punteggiatura, creavano dei cambi di ritmo nell'esecuzione del brano, talvolta disgregandone e spappolandone la melodia. Il testo che Siri generava dalla mia dettatura, era ortograficamente corretto, fedele, preciso. <br>
+Per ottenere una versione audio generata via software, che fosse stabile e verosimile al ritmo di una lettura a voce alta da parte di un umano, ripartì dal testo che il software aveva generato, modificandolo. Non era la prima volta che un computer mi dava del lavoro da svolgere.
+<br>
+<br>
+Solitamente scrivo sia su carta, sia su <i>Note</i>. Sui fogli, disegno e progetto, su smartphone annoto appunti di qualsiasi genere. La versione cartacea è organizzata, quella digitale, disorganizzata. L’unico accorgimento è scrivere in un file associato al mese dell’anno in corso. E ripetere l’operazione lungo tutto l’anno solare. 
+<br>
+Attualmente si tratta di “NOV 25”. Sto raccogliendo le frasi-fatte, assiomi popolari come "chi predica bene, razzola male" (grazie Furio). Frasi del genere, insomma. Oltre ai luoghi comuni popolani, ai vecchi adagi, trascrivo anche le frasi che i GPT mi inviano suggerendomi modifiche per arricchire, o correggere, i documenti che gli chiedo di elaborare per me. 
+<br>
+È questo una sorta di "prompt di ritorno", di "negative-prompt"?. Naturalmente. La strategia immagino sia la filastrocca sul tenere l’utente agganciato alla piattaforma e di tenerlo lì il più a lungo possibile. Economia del servizio. <i>Nulla di nuovo sotto il sole, appunto</i>. 
+<br>
+Questo il preambolo per introdurre il soggetto, il centro attrattivo del discorso, che riguarda frasi particolari e la scrittura generata da l’AI in ambiente ChatGpT. E altre cose, tra cui, l’appropriazionismo, l’ascolto, la registrazione, il tracciamento, per mezzo dei dispositivi connessi alla rete. Ciò che segue è uno degli output generato dal software dopo l’invio di un mio prompt che più o meno era scritto così: "Cosa intendi quando scrivi "Vuoi che lo faccia?", oppure "Vuoi che crei una versione corretta, fedele al tuo stile?", "Preferisci un tono più formale?"

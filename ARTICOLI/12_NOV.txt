@@ -1,0 +1,13 @@
+19 NOV
+
+https://www.crudo.cloud è scritto in HTML, CSS e JavaScript.
+Questa impostazione mi permette di scrivere il codice in autonomia e di modificare i file con qualsiasi editor di testo, anche offline. Inoltre mi consente, se necessario, di migrare altrove senza preoccuparmi di template o plug-in da gestire.
+Per l’organizzazione delle cartelle e l’upload dei file sto utilizzando Adobe Dreamweaver, che però mi sembra ormai piuttosto obsoleto.
+
+Non sono presenti plug-in di terze parti per il tracciamento delle visite né vengono utilizzati cookie. Il che rende la dichiarazione Privacy Policy non necessaria.
+Ho ridotto al minimo le scelte stilistiche per non caratterizzare eccessivamente le gerarchie degli elementi. Non c’è un vero design orientato all’user-friendly.
+Questo sito nasce principalmente come spazio personale per mettere ordine ai miei archivi — digitali e non digitali —, per accedervi e consultarli agevolmente.
+Il layout è responsivo, ma la struttura è pensata soprattutto per un’esperienza desktop.
+Se stai leggendo da smartphone, ruota lo schermo.
+
+Il font principale è Geist; per il logo ho invece utilizzato il leggendario Sand Bureau.

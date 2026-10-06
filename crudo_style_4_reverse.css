@@ -1,0 +1,499 @@
+/* --------------------------------------------------------
+   BASE FONT & RESET
+-------------------------------------------------------- */
+html {
+  font-size: clamp(28px, 2vw + 1rem, 36px);
+	}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------------------------------
+   IMPORTAZIONE FONT
+-------------------------------------------------------- */
+@font-face {
+  font-family: 'Sand Bureau';
+  src: url('fonts/sandbureau.woff2') format('woff2'),
+       url('fonts/sandbureau.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("fonts/Geist-Regular.woff2") format("woff2"),
+       url("fonts/Geist-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Geist", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  background: #fff;
+  padding: 0.5rem;
+  line-height: 0.5;
+  letter-spacing: -0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* --------------------------------------------------------
+   BASE FONT & RESET
+-------------------------------------------------------- 
+html {
+  font-size: clamp(24px, 2vw + 1rem, 31px);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*/
+
+body {
+  font-family: "Geist", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  background: #fff;
+  padding: 0.5rem;
+  line-height: 0.5;
+  letter-spacing: -0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------------------------------------------------------
+   LOGO
+-------------------------------------------------------- */
+.logo {
+  position: fixed;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  font-family: 'Sand Bureau', serif;
+  font-size: 0.9rem;
+  mix-blend-mode: difference;
+	visibility: hidden;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: crosshair;
+  padding-right: 0.15rem;
+	visibility: hidden;
+}
+
+/* --------------------------------------------------------
+   MENU
+-------------------------------------------------------- */
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.menu-item a {
+  font-size: 0.8rem;
+  line-height: 0.8;
+  letter-spacing: -0.05em;
+  text-decoration: underline;
+  color: #000;
+  font-weight: 400;
+}
+
+.menu-item a:hover {
+  color: #00FF00;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------
+   MENU GREY CREDITS
+----------------------------------------------------------*/
+
+.grey-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 0;
+}
+
+.grey-item a {
+  font-size: 0.8rem;
+  line-height: 0.8;
+  letter-spacing: -0.05em;
+  text-decoration: underline;
+  color: #d9d9d9;  /* ← Il colore che vuoi */
+  font-weight: 400;
+}
+
+.grey-item a:hover {
+  color: #8B00FF;
+  text-decoration: none;
+}
+
+
+/* --------------------------------------------------------
+   LISTA LAVORI
+-------------------------------------------------------- */
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.work-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  line-height: 0.7;
+  letter-spacing: -0.05em;
+}
+
+.work-item a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.work-item a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+.work-item a:visited,
+.contact-item a:visited,
+.col p a:visited {
+  color: #ff80bf;
+}
+
+.nuova-classe a:visited {
+  color: #ff80bf;
+}
+
+
+/* --------------------------------------------------------
+   CITAZIONI
+-------------------------------------------------------- */
+.citation {
+  font-family: "Geist", Helvetica, Arial, sans-serif;
+  font-size: 0.4rem;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #333;
+  margin: 0.1rem 0;
+}
+
+/* --------------------------------------------------------
+   CONTATTI
+-------------------------------------------------------- */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.contact-item {
+  font-size: 0.8rem;
+  line-height: 0.7;
+  letter-spacing: -0.05em;
+}
+
+.contact-item a {
+  font-size: 0.8rem;
+  line-height: 0.7;
+  letter-spacing: -0.05em;
+  text-decoration: underline;
+  color: inherit;
+}
+
+.contact-item a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+/* --------------------------------------------------------
+   TOP ROW
+-------------------------------------------------------- */
+.top-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 0.5rem;
+  line-height: 0.7;
+}
+
+.now-label,
+.datetime,
+.subheading,
+.subdate-text,
+.subphrase {
+  font-size: 0.8rem;
+  letter-spacing: -0.05em;
+  line-height: 0.7;
+	margin-top: 0em;
+}
+
+.datetime {
+	border-top: 0;
+	margin-top: 0em;
+	}
+
+.now-label {
+  color: #666;
+  text-transform: uppercase;
+}
+
+.reverse {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: -0.05em;
+  line-height: 0.7;
+  margin-top: 0em;
+}
+
+.subheading {
+  color: #666;
+  margin-bottom: 0.1rem;
+}
+
+
+.subdate-text {
+  color: #00FF00;
+  margin-bottom: 0.2rem;
+}
+
+.subphrase {
+  color: #0000FF;
+  margin-bottom: 0.1rem;
+	margin-top: -0.1em;
+}
+
+/* --------------------------------------------------------
+   LAYOUT: THREE COLUMNS (DESKTOP)
+-------------------------------------------------------- */
+.three-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.4rem;
+}
+
+::selection {
+    color: #FF00FF;        /* MAGENTA */
+    background-color: transparent; /* NO SFONDO  */
+}
+
+/* Firefox */
+::-moz-selection {
+    color: #FF00FF;
+    background-color: transparent;
+}
+
+.col p {
+  font-size: 0.8rem;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.col img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* --------------------------------------------------------
+   IMMAGINI
+-------------------------------------------------------- */
+.three-columns img {
+  width: 100%;
+  height: auto;
+  display: block;
+  grid-column: 1 / span 2;
+}
+
+.wide-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  grid-column: 1 / span 2;
+  margin-bottom: 0.5rem;
+}
+
+/* --------------------------------------------------------
+   CHECKBOX
+-------------------------------------------------------- */
+.checkbox-list {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+	margin-top: 0.05em;
+}
+
+.checkbox-list li {
+  margin-bottom: 0.1em;
+}
+
+.checkbox-list input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox-list input[type="checkbox"]:checked {
+  background-color: #333;
+  border-color: #333;
+}
+
+.checkbox-list input[type="checkbox"]:checked::after {
+  content: '✔';
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 3px;
+}
+
+/* Label allineati con il checkbox */
+.checkbox-list label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+	font-display: "Geist";
+	font-size: 0.8em;
+	letter-spacing: -0.05em;
+  line-height: 0.7;
+	color: rgba(0,0,0,0.85)
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .three-columns {
+    display: flex;
+    flex-direction: column;
+  }
+  .col {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+}
+
+/* --------------------------------------------------------
+   RESPONSIVE — Mobile
+-------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .notes-list li {
+    gap: 0.5rem;
+    margin-bottom: 0.35rem;
+  }
+}
+
+
+/* --------------------------------------------------------
+   MEDIA QUERIES
+-------------------------------------------------------- */
+
+/* Tablet <= 900px */
+@media (max-width: 900px) {
+  .three-columns img,
+  .wide-img {
+    grid-column: 1 / span 2;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile <= 600px */
+@media (max-width: 600px) {
+
+  .three-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .three-columns p {
+    width: 80%;
+  }
+
+  .three-columns img,
+  .wide-img {
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+	
+	/* GREY-ITEM */
+  .grey-item {
+    gap: 0.2rem;  /* ← stesso del menu */
+  }
+
+  .grey-item a {
+    font-size: 0.8rem;  /* ← stesso del menu */
+    line-height: 0.8;   /* ← stesso del menu */
+    letter-spacing: -0.05em;
+  }
+}
+
+/* --------------------------------------------------------
+   MOBILE: > interlinea / mobile
+-------------------------------------------------------- */
+@media (max-width: 600px) {
+  .datetime {
+    display: none;
+    line-height: 0.9;
+    margin-top: 0em;
+    padding-top: 0em;
+  }
+
+  /* "Reverse" > largh / mobile */
+  .top-row {
+    display: block;
+  }
+
+  #reverse-datetime {
+    display: block;
+    white-space: nowrap;
+    overflow: visible;
+    font-size: clamp(0.6rem, 5.5vw, 1rem);
+    line-height: 1.2;
+    padding-top: 0.2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
