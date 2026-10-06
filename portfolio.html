@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRUDO / PORTFOLIO</title>
+
+  <link rel="stylesheet" href="crudo_style_1.css">
+</head>
+<body>
+
+  <div class="top-row">
+    <span class="now-label" style="grid-column:1;">PORTFOLIO</span>
+    <div class="datetime" id="datetime" style="grid-column:2; text-align:left;"></div>
+    <div style="grid-column:3;"></div>
+  </div>
+
+  <div class="subheading">Projects:</div>
+	<div class="subdate-text">Update Feb 08 / 2026 /</div>
+  <div class="subphrase">Online archive / 1997 / 2026 /</div>
+ <!-- MENU -->
+  <section class="portfolio-list">
+	  <div class="work-item"><a href="portfolio/p221_crudo.html" title="Reverse" target="_blank">P. 221 / Reverse (2026)</a></div>
+	  <div class="work-item"><a href="portfolio/p220_crudo.html" title="Homage to On Kawara" target="_blank">P. 220 / A.I. On / Kawara (2026)</a></div>
+	  <div class="work-item"><a href="portfolio/p219_curdo.html" title="Homage to JODI" target="_blank">P. 219 / ΓΣΥ_JODI (2013—2026)</a></div>
+      <div class="work-item"><a href="portfolio/p200_crudo.html" target="_blank">P. 200 / Now (2025—Present)</a></div>
+      <div class="work-item"><a href="portfolio/p181_crudo.html" title="p 181 / CRUDO" target="_blank">P. 181 / Routine Waavvveeeesssss (2024)</a></div>
+      <div class="work-item"><a href="portfolio/p178_crudo.html" title="Density Gradient / Book / 2003" target="_blank">P. 178 / Density Gradient / Book (2023)</a></div>
+      <div class="work-item"><a href="portfolio/p172_crudo.html" title="Fruit of the Doom / 2023" target="_blank">P. 172 / Fruit Of The Doom (2023)</a></div>
+      <div class="work-item"><a href="portfolio/p127_crudo.html" title="Demo Area / Stickers / v.2021" target="_blank">P. 127 / Demo Area (2022)</a></div>
+      <div class="work-item"><a href="portfolio/p116_crudo.html" title="Mo No / 2021">P. 116 / Mo No (2021)</a></div>
+      <div class="work-item"><a href="portfolio/p98_crudo.html" title="Sorry About Death : )">P. 098 / Sorry About (That) Death (2020)</a></div>
+      <div class="work-item"><a href="portfolio/p92_crudo.html" title="Digital Smashed Sounds / 2020" target="_blank">P. 092 / Digital Smashed Sounds (2020)</a></div>
+      <div class="work-item"><a href="portfolio/p34_crudo.html" title="Ear Warmer / 2018" target="_blank">P. 034 / Ear Warmer (2018)</a></div>
+      <div class="work-item"><a href="portfolio/p19_crudo.html" title="Me Myself AI / Podcast" target="_blank">P. 019 / Me Myself AI (2018)</a></div>
+      <div class="work-item"><a href="portfolio/p-11_crudo.html" title="Mirror Screen / Window Exe / 2017" target="_blank">P. 011 / Mirror_Screen Window_Exe (2018)</a></div>
+      <div class="work-item"><a href="portfolio/p1.html" title="ABCBA / Crudo / 2017" target="_blank">P. 001 / ABCBA (2017)</a></div>
+      <div class="work-item"><a href="portfolio/p0_crudo.html" target="_blank">P. 000 / Lost Senses (2017)</a></div>
+      <div class="work-item"><a href="portfolio/p-1.html" title="Venice / 2013" target="_blank">P. −01 / Venice (2015—Present)</a></div>
+      <div class="work-item"><a href="portfolio/p-3_crudo.html" title="Background Sounds / 2015 / Present" target="_blank">P. −03 / Background Sounds (2015)</a></div>
+      <div class="work-item"><a href="portfolio/p-10_crudo.html" title="Load 433 / 201 5" target="_blank">P. −10 / 433 (2015)</a></div>
+      <div class="work-item"><a href="portfolio/p-25_crudo.html" title="Flags / 2013" target="_blank">P. −25 / Flags (2013)</a></div>
+	  <div class="work-item"><a href="portfolio/p-26_crudo.html" title="Patches 2013—Ongoing" target="_blank">P. −26 / Patch (2013—Ongoing)</a></div>
+	   <div class="work-item"><a href="portfolio/p-27_crudo.html" title="Patches 2013—Ongoing" target="_blank">P. −27 / Patch (2013—Ongoing)</a></div>
+      <div class="work-item"><a href="portfolio/p-89_crudo.html" title="Kan.Aria / Fanzine / 2002 / 2004" target="_blank">P. −89 / Kan.Aria (2002—2004)</a></div>
+      <div class="work-item"><a href="portfolio/p-99_crudo.html" title="Photocopy #89 / 1997" target="_blank">P. -99 / Photocopy#89 (1997)</a></div>
+    </section>
+
+  <!-- LAYOUT A TRE COLONNE -->
+  <section class="three-columns">
+
+	  <div class="col" id="col-1"></div>
+      <!-- Testi + immagini -->
+		<!-- COLONNA SINISTRA -->
+		<!-- TXT -->
+      <!-- COLONNA CENTRALE -->
+	  <div class="col" id="col-2"></div>
+	  
+	<!-- COLONNA DESTRA -->
+	  <div class="col" id="col-3"></div>
+	  </section>
+
+<div class="logo"><a href="index.html">CRUDO</a></div>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      const day = now.getDate().toString().padStart(2,'0');
+      const month = now.toLocaleString('en',{ month:'short'}).toUpperCase();
+      const year = now.getFullYear().toString().slice(-2);
+      const hours = now.getHours().toString().padStart(2,'0');
+      const minutes = now.getMinutes().toString().padStart(2,'0');
+      const seconds = now.getSeconds().toString().padStart(2,'0');
+      document.getElementById('datetime').textContent = `${day} ${month} ${year} ${hours}:${minutes}:${seconds}`;
+    }
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+
+</body>
+</html>

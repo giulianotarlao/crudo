@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRUDO / REVERSE</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../crudo_style_1_reverse.css">
+</head>
+<body>
+
+  <div class="top-row">
+    <div id="days-counter" style="grid-column:1;"></div>
+    <div style="grid-column:2;"></div>
+    <div style="grid-column:3;"></div>
+  </div>
+
+  <div class="logo"><a href="#">CRUDO</a></div>
+
+ <script>
+    // 'Reverse' by CRUDO / Midnight 26 AGO 2026
+    const START_DATE = new Date('2026-08-12T00:00:00').getTime(); 
+    // Riferimento per il calcolo dei giorni trascorsi
+    const EPOCH_1980 = new Date('1980-11-01T00:00:00').getTime();
+
+    function fmtDate(d) {
+      const day   = d.getDate().toString().padStart(2, '0');
+      const month = d.toLocaleString('en', { month: 'short' }).toUpperCase();
+      const year  = d.getFullYear();
+      const h     = d.getHours().toString().padStart(2, '0');
+      const m     = d.getMinutes().toString().padStart(2, '0');
+      const s     = d.getSeconds().toString().padStart(2, '0');
+      return `${day} ${month} ${year} ${h}:${m}:${s}`;
+    }
+
+    function updateReverse() {
+      const now = Date.now();
+      
+      // 1. Logica Reverse esistente
+      const elapsed = now - START_DATE;
+      const reversed = new Date(START_DATE - elapsed);
+      const revElement = document.getElementById('reverse-datetime');
+      if (revElement) {
+        revElement.textContent = fmtDate(reversed);
+      }
+
+      // 2. Calcolo giorni trascorsi dal 1980 (scatta a mezzanotte)
+      const diffInMs = now - EPOCH_1980;
+      const daysElapsed = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
+      
+      const daysElement = document.getElementById('days-counter');
+      if (daysElement) {
+        daysElement.textContent = daysElapsed.toLocaleString();
+      }
+    }
+
+    // Avvio e aggiornamento ogni secondo
+    updateReverse();
+    setInterval(updateReverse, 1000);
+</script>
+
+
+
+
+
+</body>
+</html>

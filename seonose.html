@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRUDO — Now</title>
+
+  <link rel="stylesheet" href="crudo_style_1.css">
+</head>
+<body>
+
+  <div class="top-row">
+    <span class="now-label" style="grid-column:1;">ROUTINE</span>
+    <div class="datetime" id="datetime" style="grid-column:2; text-align:left;"></div>
+    <div style="grid-column:3;"></div>
+  </div>
+
+  <div class="subheading">Sessione:</div>
+  <div class="subdate-text">Nov 19 / 2025 /</div>
+	<div class="subphrase">«Vuoi che lo faccia?» / Ep.2</div>
+
+  <!-- LAYOUT A TRE COLONNE -->
+  <section class="three-columns">
+
+  <!-- COLONNA SINISTRA -->
+  <div class="col" id="col-1">
+	  <!-- TEMP 
+  <p>
+    Avevo in mente di scrivere un diario... 
+  </p>
+-->
+<p class="routine-title">Marca, leggi, riscrivi</p>
+  <!-- Lista editabile con checkbox -->
+  <ul class="routine-list editable-routine" id="editable-routine">
+  <li>
+    <label>
+      <input type="checkbox">
+      <span class="checkbox-circle"></span>
+      <span class="task-text" contenteditable="true">Check&nbsp;</span>
+    </label>
+  </li><li>
+    <label>
+      <input type="checkbox">
+      <span class="checkbox-circle"></span>
+      <span class="task-text" contenteditable="true">RIscrivi</span>
+    </label>
+  </li>
+	  <li>
+    <label>
+      <input type="checkbox">
+      <span class="checkbox-circle"></span>
+      <span class="task-text" contenteditable="true">Inviami screenshot : )</span>
+    </label>
+  </li>
+</ul>
+
+</div>
+
+
+  <!-- COLONNA CENTRALE -->
+  <div class="col" id="col-2">
+    
+  </div>
+
+  <!-- COLONNA DESTRA -->
+  <div class="col" id="col-3">
+  </div>
+
+  <!-- IMMAGINE ORIZZONTALE: occupa colonna 1 e 2 -->
+</section>
+
+
+
+    
+
+  <div class="logo"><a href="index.html">CRUDO</a></div>
+
+  <script src="datetime.js"></script>
+	
+<script>
+  const list = document.getElementById('editable-routine');
+
+  let draggedItem = null;
+
+  list.addEventListener('dragstart', (e) => {
+    draggedItem = e.target;
+    e.target.style.opacity = '0.5';
+  });
+
+  list.addEventListener('dragend', (e) => {
+    draggedItem = null;
+    e.target.style.opacity = '1';
+  });
+
+  list.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    const afterElement = getDragAfterElement(list, e.clientY);
+    if (afterElement == null) {
+      list.appendChild(draggedItem);
+    } else {
+      list.insertBefore(draggedItem, afterElement);
+    }
+  });
+
+  function getDragAfterElement(list, y) {
+    const draggableElements = [...list.querySelectorAll('li:not(.dragging)')];
+
+    return draggableElements.reduce((closest, child) => {
+      const box = child.getBoundingClientRect();
+      const offset = y - box.top - box.height / 2;
+      if (offset < 0 && offset > closest.offset) {
+        return { offset: offset, element: child };
+      } else {
+        return closest;
+      }
+    }, { offset: Number.NEGATIVE_INFINITY }).element;
+  }
+
+  // Imposta tutti gli <li> come draggable
+  list.querySelectorAll('li').forEach(li => li.setAttribute('draggable', true));
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRUDO / ME</title>
+
+  <link rel="stylesheet" href="crudo_style_1.css">
+</head>
+<body>
+
+  <div class="top-row">
+    <span class="now-label" style="grid-column:1;">ME</span>
+    <div class="datetime" id="datetime" style="grid-column:2; text-align:left;"></div>
+    <div style="grid-column:3;"></div>
+  </div>
+
+  <div class="subheading">Cv:</div>
+	<div class="subdate-text">Update Mar 28 / 2026 /</div>
+  <div class="subphrase">Progetti / 1997 / 2026 /</div>
+
+  <!-- LAYOUT A TRE COLONNE -->
+	<div class="subheading">Me in breve:</div>
+  <section class="three-columns">
+
+	  <div class="col" id="col-1">
+	  <p>Fotografo / Grafico.<br>
+	    Docente presso l'Università degli studi di Udine per il corso Fotografia Digitale. Dipartimento di Studi Umanistici e del Patrimonio Culturale. Scienze del patrimonio audiovisivo e dell'educazione ai media, curriculum Digital Storytelling [dall'A.A. 2022].</p><br>
+	    <div class="subheading">Ricerca</div>
+		  <p>"Interrogo le narrazioni che costruiscono il reale lungo le frontiere dell'immagine, con tool indicizzanti e generativi. Conduco una ricerca che sviluppo attraverso 'ripetizione', 'differenza', 'replica', 'persistenza' e il 'già-presente'. Tali movimenti trovano origine nell'allenamento — respirazione, corsa su lunga distanza — una pratica che trasferisco come metodologia nel contesto accademico."</p>
+		  <br>
+		   <div class="subheading">Training. Ecco cosa.</div>
+		  <p>Allenamento e routine: Camminare. Reset della casa. Stretching. Allenamento a corpo libero. Nutrirmi, mangiare poco. Digiunare 2 volte l'anno. Corsa a piedi. Esposizione al freddo. Lavoro sulle immagini: dal bifacciale al prompt. Hackerare payoff e modi-di-dire, ricordare a memoria. Leggere due libri nello stesso periodo di tempo. Book-crossing. Costruire Kit portatili. Raccogliere qualsiasi tipo di found-object.<br>
+	      <a href="me_eng.html"> Eng. Version </a> </p>
+		  <br>
+		  </div>
+      <!-- Testi + immagini -->
+		<!-- COLONNA SINISTRA -->
+		<!-- TXT -->
+      <!-- COLONNA CENTRALE -->
+	  <div class="col" id="col-2"></div>
+	  
+	<!-- COLONNA DESTRA -->
+	  <div class="col" id="col-3"></div>
+	  </section>
+
+<div class="logo"><a href="index.html">CRUDO</a></div>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      const day = now.getDate().toString().padStart(2,'0');
+      const month = now.toLocaleString('en',{ month:'short'}).toUpperCase();
+      const year = now.getFullYear().toString().slice(-2);
+      const hours = now.getHours().toString().padStart(2,'0');
+      const minutes = now.getMinutes().toString().padStart(2,'0');
+      const seconds = now.getSeconds().toString().padStart(2,'0');
+      document.getElementById('datetime').textContent = `${day} ${month} ${year} ${hours}:${minutes}:${seconds}`;
+    }
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+
+</body>
+</html>
